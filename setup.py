@@ -4,18 +4,12 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
-requirements = [ ]
+requirements = []
 
 test_requirements = ['pytest>=3', ]
 
 setup(
-    author="Pablo Ariñoi and Alvaro Laguna",
+    author="Pablo Ariño and Alvaro Laguna",
     author_email='pablo.arino@alumnos.upm.es',
     python_requires='>=3.6',
     classifiers=[
@@ -27,11 +21,12 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
     description="Assignment 2 of Big Data",
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='src',
     name='src',
